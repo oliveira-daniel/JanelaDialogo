@@ -8,16 +8,17 @@ public class TextoDialogo : MonoBehaviour
 	private string textoMesagem;
 	private int posMensagem, posVetor;
 
+	// Campo privado mas acessivel via Inspector
 	[SerializeField]
 	private float tempo;
+
+	public GameObject avancarBtn;
 
 	private string[] mensagens = {
 		"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
 		"Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus.",
 		"Aliquam erat volutpat."
 	};
-
-	public GameObject avancarBtn;
 
 	// Use this for initialization
 	void Start ()
@@ -60,7 +61,7 @@ public class TextoDialogo : MonoBehaviour
 			// Metodo responsavel por escrever na tela a mensagem
 			textoDialogo.text += textoMesagem [posMensagem++];
 			
-			// Aguardar por um determinado tempo
+			// Aguardar por um determinado tempo (em segundos)
 			yield return new WaitForSeconds (tempo);
 
 			// Chamar a funçao novamente
