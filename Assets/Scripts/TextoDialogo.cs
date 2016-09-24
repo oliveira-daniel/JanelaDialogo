@@ -12,9 +12,11 @@ public class TextoDialogo : MonoBehaviour
 	[SerializeField]
 	private float tempo;
 
-	public GameObject avancarBtn;
+    [SerializeField]
+    private GameObject avancarBtn;
 
-	private string[] mensagens = {
+    [SerializeField]
+    private string[] mensagens = {
 		"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
 		"Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus.",
 		"Aliquam erat volutpat."
