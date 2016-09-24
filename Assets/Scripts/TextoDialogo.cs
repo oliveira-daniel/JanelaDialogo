@@ -13,7 +13,7 @@ public class TextoDialogo : MonoBehaviour
 	private float tempo;
 
     [SerializeField]
-    private GameObject avancarBtn;
+    private GameObject avancarBtn; 
 
     [SerializeField]
     private string[] mensagens = {
